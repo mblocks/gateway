@@ -1,5 +1,6 @@
 FROM kong:alpine
 
+ADD kong.yml /usr/local/kong/declarative/kong.yml
 ADD mine.type /usr/local/kong/mine.type
 ADD nginx-custom.conf /usr/local/kong/nginx-custom.conf
 ADD scripts /home/kong/scripts
