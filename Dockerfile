@@ -11,6 +11,6 @@ USER 1000
 RUN luarocks install lua-resty-cookie && luarocks install kong-plugin-redis-auth 0.2.0
 RUN sed -i "19 a include 'nginx-custom.conf';" /usr/local/share/lua/5.1/kong/templates/nginx.lua
 RUN /home/kong/scripts/download.sh mblocks/portal portal && \
-    /home/kong/scripts/download.sh mblocks/admin origin && \
+    /home/kong/scripts/download.sh mblocks/admin admin && \
     /home/kong/scripts/download.sh mblocks/drive-frontend drive
 
