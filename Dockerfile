@@ -13,4 +13,4 @@ RUN sed -i "19 a include 'nginx-custom.conf';" /usr/local/share/lua/5.1/kong/tem
 RUN /home/kong/scripts/download.sh mblocks/portal portal && \
     /home/kong/scripts/download.sh mblocks/admin admin && \
     /home/kong/scripts/download.sh mblocks/drive-frontend drive && \
-    /home/kong/scripts/download.sh mblocks/bookkeeping bookkeeping
+    /home/kong/scripts/download.sh mblocks/bookkeeping-antd bookkeeping
